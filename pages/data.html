@@ -5,8 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/navbar.css" />
-    <link rel="stylesheet" href="../style/data.css" />
+    <!-- <link rel="stylesheet" href="../style/navbar.css" /> -->
+    <!-- <link rel="stylesheet" href="../style/data.css" /> -->
+    <style>
+      /* Style for the navbar */
+#navbar_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+#navbar_container div {
+  margin-right: 20px;
+}
+
+#navbar_container div:last-child {
+  margin-right: 0;
+}
+
+#navbar_container a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#navbar_container a:hover {
+  text-decoration: underline;
+}
+
+
+/* Style for the page title */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+}
+
+
+/* Style for the search and sort section */
+#Search_sort {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#Search_sort div {
+  display: flex;
+  align-items: center;
+}
+
+#Search_sort label {
+  margin-right: 10px;
+}
+
+#Search_sort input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#Search_sort select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* Style for the data container */
+#data_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.user_card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.user_card h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.user_card p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+/* Style for the user model */
+#userModel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#userModel_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#userModel h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#userModel p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#userModel button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    </style>
+
   </head>
   <body>
     <div id="navbar_container">
