@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="../style/navbar.css">
+    <link rel ="stylesheet" href="../style/registration.css">
+</head>
+<body>
+    <h2 id="headingregister">Registraion Form</h2>
+    <form id="myform">
+        <div> <label for="NM">Name</label>
+            <input id="NM" placeholder="Name" type="text" required></div>
+        <div>  <label for="AG">Age</label>
+             <input id="AG" placeholder="Age" type=number required></div>
+      <div><label for="PL">Place</label>
+          <input id="PL" placeholder="place" type="text" required></div>
+      <div><label for="batch">Choose Batch</label>
+        <select id="batch" required>
+            <option value="">choose Batch</option>
+            <option value="WEB-20">WEB-20</option>
+            <option value="WEB-21">WEB-21</option>
+            <option value="WEB-22">WEB-22</option>
+            <option value="WEB-23">WEB-23</option>
+            <option value="WEB-24">WEB-24</option>
+            <option value="WEB-25">WEB-26</option>
+        </select>
+      </div>
+ 
+<div>  <label for="profession">Choose profession</label>
+      <select id="profession" required>
+        <option value="">choose Profession</option>
+       
+        <option value="Frontend">Frontend Developer</option> 
+        <option value="Backend">Backend Developer</option>
+        <option value="Student">Student</option>
+        <option value="FSD">Full Stack Developer</option>
+    </select>
+</div>
+<div id="registerbutt">
+    <input type="submit" value="Register"></input>
+</div>
+
+    </form>
+</body>
+</html>
+
+<script src ="../script/registration.js"></script>
